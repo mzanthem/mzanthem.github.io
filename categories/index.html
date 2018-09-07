@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="title: categories date: 2018-09-06 15:07:09 categories: Testing #分类名">
+<meta name="description" content="title: categories date: 2018-09-06 15:07:09 categories: Testing #分类名 …$(document).ready(function (){}… $(document).ready(function (){}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="mazan&#39;s github document">
 <meta property="og:url" content="http://mzanthem.github.io/categories/index.html">
 <meta property="og:site_name" content="mazan&#39;s github document">
-<meta property="og:description" content="title: categories date: 2018-09-06 15:07:09 categories: Testing #分类名">
+<meta property="og:description" content="title: categories date: 2018-09-06 15:07:09 categories: Testing #分类名 …$(document).ready(function (){}… $(document).ready(function (){}">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-06T07:10:33.986Z">
+<meta property="og:updated_time" content="2018-09-07T06:47:05.375Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mazan&#39;s github document">
-<meta name="twitter:description" content="title: categories date: 2018-09-06 15:07:09 categories: Testing #分类名">
+<meta name="twitter:description" content="title: categories date: 2018-09-06 15:07:09 categories: Testing #分类名 …$(document).ready(function (){}… $(document).ready(function (){}">
 
 
 
@@ -281,6 +281,8 @@
 <p>title: categories</p>
 <p>date: 2018-09-06 15:07:09</p>
 <p>categories: Testing #分类名</p>
+<p>…<br><code>$(document).ready(function (){}</code><br>…</p>
+<p><code>$(document).ready(function (){}</code></p>
 
         
       </div>
@@ -338,6 +340,18 @@
               <p class="site-description motion-element" itemprop="description">test</p>
           </div>
 
+          <!--my custom code begin-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+          <script type="text/javascript">
+            $("#sidebar").hover(function(){
+              $("#mydivshow").velocity('stop').velocity({opacity: 1});
+            },function(){
+              $("#mydivshow").velocity('stop').velocity({opacity: 0});
+            });
+          </script>
+          <div id="mydivshow" class="mydivshow">
+          <!--my custom code end-->
           <nav class="site-state motion-element">
 
             
@@ -386,6 +400,9 @@
           
 
         </div>
+      <!--my custom code begin-->
+      </div>
+      <!--my custom code end-->
       </section>
 
       
@@ -402,12 +419,22 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <!-- 流量统计 -->
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">mzanthem</span>
-
+</div>
+<!-- 本站访客数 -->
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+<!-- 博客字数统计-->
+<div class="theme-info">
   
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
@@ -420,16 +447,11 @@
   
 </div>
 
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
+<!-- -->
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
 
 
 
