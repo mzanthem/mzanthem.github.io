@@ -1,6 +1,11 @@
 /* global NexT: true */
 
 $(document).ready(function () {
+
+
+  NexT.motion = {};
+
+  // my custom code begin
   //fix left sidebar bug
   window.onload=function(){
     var bwol=document.body.offsetWidth;
@@ -15,8 +20,10 @@ $(document).ready(function () {
     if($('aside#sidebar').css('display') != 'none' && $('aside#sidebar').css('width')!='0px')
         $('body').velocity('stop').velocity({paddingLeft: 350},0);
   }
+  // link author image
+  $('.site-author-image').click(function(){window.location.href="http://mzanthem.github.io";});
 
-  NexT.motion = {};
+  //my customer code end
 
   var sidebarToggleLines = {
     lines: [],

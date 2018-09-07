@@ -20,6 +20,7 @@ body
   background:rgba(0,0,0,0.5) none repeat scroll !important;
 .footer-inner 
   color: #adff2f
+
 .lv-container
   border-radius: 10px;
   background:rgba(255,255,255,0.8) none repeat scroll !important;
@@ -31,3 +32,29 @@ body
   background-position:center
   background-repeat:no-repeat
   p,span,a {color: #f5f5f5}
+
+//主页文章添加阴影效果
+.post
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+  -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+  // -webkit-box-shadow: 0px 0px 5px #808080 inset; //阴影
+  // -moz-box-shadow: 0px 0px 5px #808080 inset; //老的firefox
+
+// .posts-expand 
+  // margin: 0 20px;
+  // padding-top: 40px;
+
+.posts-collapse::after//归档
+  top: 0px;
+
+#posts code 
+  color: #ff0
+  background-color: #696969
+
+
+#mydivshow
+  opacity: 0;
+

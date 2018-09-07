@@ -35,4 +35,22 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 $ hexo deploy
 ```
 
+```java
+public class TestSplit {
+
+    public static void main(String[] args) {
+        String str = "localhost-mz\\|1";
+//        String[] value = str.split("\\|");
+        String[] value;
+        value = StringUtils.split(str, "\\|");
+        for(String s : value){
+            System.out.println(s);
+        }
+
+    }
+}
+```
+code:
+
+`TestSplit`
 More info: [Deployment](https://hexo.io/docs/deployment.html)
