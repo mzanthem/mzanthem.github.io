@@ -330,6 +330,8 @@
         {{ post.content }}
       {% endif  %}
     </div>
+    <!-- 文章结束 -->
+    <div style="text-align:center;color: #1E1E1E;font-size:14px;">本文结束----<i class="fa fa-heart"></i>----感谢阅读</div>
     {#####################}
     {### END POST BODY ###}
     {#####################}
@@ -348,7 +350,9 @@
 
     {% if theme.post_copyright.enable and not is_index %}
       <div>
-        {% include 'post-copyright.swig' with { post: post } %}
+        <!-- {% include 'post-copyright.swig' with { post: post } %} -->
+        <!-- replace by my post copyright -->
+        {% include 'my-copyright.swig' with { post: post } %}
       </div>
     {% endif %}
 
