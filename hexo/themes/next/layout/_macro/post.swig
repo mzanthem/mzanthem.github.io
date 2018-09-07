@@ -268,7 +268,7 @@
     {#################}
     {### POST BODY ###}
     {#################}
-    <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
+    <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody"> 
 
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
@@ -331,7 +331,9 @@
       {% endif  %}
     </div>
     <!-- 文章结束 -->
-    <div style="text-align:center;color: #1E1E1E;font-size:14px;">本文结束----<i class="fa fa-heart"></i>----感谢阅读</div>
+    {% if not is_index %}
+      <div style="text-align:center;color: #1E1E1E;font-size:14px;">----------------本文结束<i class="fa fa-heart"></i>感谢阅读----------------</div>
+    {% endif %}
     {#####################}
     {### END POST BODY ###}
     {#####################}
