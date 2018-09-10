@@ -1981,7 +1981,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #397db6;
+  background: #81cba6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3138,6 +3138,12 @@ body {
 #posts code {
   color: #ff0;
   background-color: #696969;
+}
+.post-toc {
+  overflow: hidden;
+}
+.site-overview {
+  overflow: hidden;
 }
 #mydivshow {
   opacity: 0;
